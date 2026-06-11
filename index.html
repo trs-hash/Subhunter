@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO ===== -->
+<title>SUBHUNTER — бразильське джиу-джитсу в Києві та Ірпені | BJJ для дорослих і дітей від 4 років</title>
+<meta name="description" content="Академія бразильського джиу-джитсу SUBHUNTER: тренування BJJ для дорослих і дітей від 4 років у Києві (вул. Казимира Малевича) та Ірпені (ЖК Річ Таун). Розклад, тренери, ціни. Запис у Telegram.">
+<link rel="canonical" href="https://subhunter.com.ua/">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:url" content="https://subhunter.com.ua/">
+<meta property="og:site_name" content="SUBHUNTER Jiu-Jitsu Academy">
+<meta property="og:title" content="SUBHUNTER — бразильське джиу-джитсу в Києві та Ірпені">
+<meta property="og:description" content="BJJ для дорослих і дітей від 4 років. Київ та Ірпінь. Запис у Telegram.">
+<meta property="og:image" content="https://subhunter.com.ua/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://subhunter.com.ua/#kyiv",
+      "name": "SUBHUNTER Jiu-Jitsu Academy — зал у Києві",
+      "description": "Бразильське джиу-джитсу (BJJ) для дорослих і дітей від 4 років у Києві.",
+      "url": "https://subhunter.com.ua/",
+      "image": "https://subhunter.com.ua/og-cover.jpg",
+      "sport": "Brazilian Jiu-Jitsu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Казимира Малевича",
+        "addressLocality": "Київ",
+        "postalCode": "02000",
+        "addressCountry": "UA"
+      },
+      "priceRange": "₴₴"
+    },
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://subhunter.com.ua/#irpin",
+      "name": "SUBHUNTER Jiu-Jitsu Academy — зал в Ірпені",
+      "description": "Секція бразильського джиу-джитсу для дорослих і дітей в Ірпені, ЖК Річ Таун.",
+      "url": "https://subhunter.com.ua/",
+      "image": "https://subhunter.com.ua/og-cover.jpg",
+      "sport": "Brazilian Jiu-Jitsu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Західна, 6, ЖК Річ Таун",
+        "addressLocality": "Ірпінь",
+        "addressRegion": "Київська область",
+        "addressCountry": "UA"
+      },
+      "priceRange": "₴₴"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============ Токени: під бейдж — чорний / папір / червоний ============ */
+:root{
+  --paper:#F5F4F1;
+  --card:#FFFFFF;
+  --ink:#121214;
+  --grey:#6B6B70;
+  --line:#E4E2DC;
+  --red:#B3252A;       /* червоний зі скрипту "Jiu-Jitsu" на бейджі */
+  --red-d:#8F1B20;
+  --kids:#2A5FA8;
+  --font-d:'Oswald',sans-serif;
+  --font-b:'Manrope',sans-serif;
+  --w:1060px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-b);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 18px}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+
+h2{font-family:var(--font-d);font-weight:600;font-size:clamp(24px,3.4vw,32px);text-transform:uppercase;letter-spacing:.03em}
+.sec{padding:54px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head .dash{width:34px;height:4px;background:var(--red);align-self:center;flex:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:800;font-size:15px;padding:14px 24px;border-radius:6px;transition:.15s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#2a2a2e}
+.btn-line{border:2px solid var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+
+/* ============ Шапка ============ */
+header{position:sticky;top:0;z-index:50;background:rgba(245,244,241,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:40px;height:40px}
+.logo b{font-family:var(--font-d);font-weight:700;font-size:18px;letter-spacing:.05em}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{text-decoration:none;font-weight:700;font-size:14px;color:var(--grey)}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:13px;padding:9px 16px;border-radius:6px;white-space:nowrap}
+.nav-cta:hover{background:var(--red-d)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:7px 11px;font-size:17px;cursor:pointer;color:var(--ink)}
+
+/* ============ Hero-візитка ============ */
+.hero{padding:50px 0 0}
+.hero-card{
+  background:var(--ink);color:#fff;border-radius:16px;
+  padding:46px 40px;display:grid;grid-template-columns:auto 1fr;gap:42px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero-card::after{ /* червоний кант татамі */
+  content:'';position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red);
+}
+.hero-logo{width:210px;height:210px;flex:none;filter:drop-shadow(0 10px 28px rgba(0,0,0,.45))}
+.hero-card h1{font-family:var(--font-d);font-weight:700;font-size:clamp(26px,4.4vw,44px);line-height:1.08;text-transform:uppercase;letter-spacing:.02em}
+.hero-card h1 span{color:var(--red);-webkit-text-stroke:0}
+.hero-sub{margin:12px 0 22px;color:#B9B9BF;font-size:17px;max-width:46ch}
+.hero-sub b{color:#fff}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* стрічка швидких фактів */
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.quick a{text-decoration:none}
+.q-item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;gap:13px;align-items:center;transition:border-color .15s;height:100%}
+a .q-item:hover{border-color:var(--ink)}
+.q-ico{width:38px;height:38px;flex:none;border-radius:8px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center}
+.q-ico svg{width:19px;height:19px}
+.q-item b{display:block;font-size:14px;font-weight:800}
+.q-item span{font-size:13px;color:var(--grey)}
+
+/* ============ Розклад ============ */
+.loc-tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.loc-tab{background:var(--card);border:1px solid var(--line);color:var(--grey);font-family:var(--font-b);font-weight:800;font-size:14px;padding:10px 20px;border-radius:6px;cursor:pointer;transition:.15s}
+.loc-tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.sched{display:none;overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.sched.active{display:block}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th{font-family:var(--font-d);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.07em;padding:13px 10px;border-bottom:2px solid var(--ink);text-align:center}
+td{padding:9px 8px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:center;vertical-align:top;width:16.6%}
+td:last-child{border-right:none}
+tr:last-child td{border-bottom:none}
+td:first-child{font-family:var(--font-d);font-weight:600;font-size:14px;letter-spacing:.04em;width:54px;background:#FAFAF8}
+.cl{display:block;border-radius:7px;padding:8px 7px;margin:3px 0;font-size:12.5px;line-height:1.35}
+.cl b{display:block;font-size:13px}
+.cl i{display:block;font-style:normal;color:inherit;opacity:.72;font-size:11.5px;margin-top:1px}
+.cl-pro{background:#FBEAEA;color:#7E1418}
+.cl-kid{background:#E9F0FA;color:#1D4378}
+.cl-base{background:#F0EFEA;color:#3A3A3E}
+.legend{display:flex;gap:16px;margin-top:14px;flex-wrap:wrap;font-size:13px;color:var(--grey)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.sched-note{margin-top:10px;color:var(--grey);font-size:13px}
+
+/* ============ Класи ============ */
+.class-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.class-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;border-top:4px solid var(--ink)}
+.class-card.kid{border-top-color:var(--kids)}
+.class-card.pro{border-top-color:var(--red)}
+.class-card h3{font-family:var(--font-d);font-weight:600;font-size:17px;text-transform:uppercase;letter-spacing:.03em}
+.class-card p{color:var(--grey);font-size:14px;margin-top:7px}
+
+/* ============ Тренери ============ */
+.coach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.coach-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.coach-photo{aspect-ratio:1/1;background:radial-gradient(ellipse at 50% 35%, #E9E8E3 0%, #D8D7D1 75%);display:flex;align-items:center;justify-content:center;color:#B9B8B2}
+.coach-photo svg{width:64px;height:64px}
+.coach-body{padding:16px 18px}
+.coach-body h3{font-family:var(--font-d);font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.02em}
+.coach-body .role{color:var(--red);font-size:12.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.coach-body p{color:var(--grey);font-size:13px;margin-top:7px}
+
+/* ============ Ціни ============ */
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;position:relative}
+.price-card.hot{border:2px solid var(--red)}
+.pc-badge{position:absolute;top:-10px;left:18px;background:var(--red);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:4px}
+.price-card h3{font-size:14px;font-weight:800;color:var(--grey)}
+.pc-sum{font-family:var(--font-d);font-weight:700;font-size:30px;margin-top:4px}
+.pc-sum small{font-size:14px;color:var(--grey);font-weight:500}
+.price-card p{font-size:13px;color:var(--grey);margin-top:4px}
+.price-note{margin-top:14px;color:var(--grey);font-size:13px}
+
+/* ============ Зали ============ */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.loc-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.loc-card iframe{width:100%;height:300px;border:0;display:block}
+.loc-body{padding:20px 22px}
+.loc-body h3{font-family:var(--font-d);font-weight:600;font-size:18px;text-transform:uppercase}
+.loc-body p{color:var(--grey);font-size:14px;margin-top:5px}
+.loc-body a.route{display:inline-flex;gap:7px;margin-top:12px;font-weight:800;font-size:14px;color:var(--red);text-decoration:none}
+.loc-body a.route:hover{text-decoration:underline}
+/* фото залу */
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.photo-ph{aspect-ratio:4/3;border-radius:10px;background:repeating-linear-gradient(45deg,#ECEBE6,#ECEBE6 12px,#F2F1ED 12px,#F2F1ED 24px);display:flex;align-items:center;justify-content:center;color:#A7A6A0;font-size:12px;font-weight:700;border:1px solid var(--line)}
+
+/* ============ Правила ============ */
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:860px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:baseline;font-size:14.5px}
+.rule::before{content:'—';color:var(--red);font-weight:800;flex:none}
+
+/* ============ Контакти / підвал ============ */
+.contact-card{background:var(--ink);color:#fff;border-radius:16px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.contact-card h2{color:#fff}
+.contact-card p{color:#B9B9BF;margin-top:8px;max-width:46ch}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+footer{padding:30px 0 40px;color:var(--grey);font-size:13.5px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--grey)}
+
+/* ============ Адаптив ============ */
+@media (max-width:920px){
+  .hero-card{grid-template-columns:1fr;text-align:center;justify-items:center;padding:36px 24px}
+  .hero-actions{justify-content:center}
+  .quick{grid-template-columns:1fr}
+  .class-grid{grid-template-columns:repeat(2,1fr)}
+  .coach-grid,.price-grid{grid-template-columns:repeat(2,1fr)}
+  .loc-grid{grid-template-columns:1fr}
+  .photo-grid{grid-template-columns:repeat(2,1fr)}
+  .rules{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .nav-links{display:none;position:absolute;top:62px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:6px 18px 14px}
+  .nav-links.open{display:flex}
+  .nav-links li{padding:9px 0}
+  .burger{display:block}
+  .class-grid,.coach-grid,.price-grid{grid-template-columns:1fr}
+  .hero-logo{width:170px;height:170px}
+  .sec{padding:42px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#"><img src="logo.png" alt="SUBHUNTER Jiu-Jitsu Academy — логотип"><b>SUBHUNTER</b></a>
+    <nav aria-label="Головна навігація">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#schedule">Розклад</a></li>
+        <li><a href="#classes">Групи</a></li>
+        <li><a href="#coaches">Тренери</a></li>
+        <li><a href="#prices">Ціни</a></li>
+        <li><a href="#locations">Зали</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <!-- ЗАМІНИТИ username на реальний Telegram -->
+      <a class="nav-cta" href="https://t.me/username" rel="noopener">Записатись</a>
+      <button class="burger" aria-label="Меню" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= ВІЗИТКА ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <img class="hero-logo" src="logo.png" alt="SUBHUNTER Jiu-Jitsu Academy Ukraine" width="210" height="210">
+      <div>
+        <h1>Бразильське джиу-джитсу<br>в Києві та <span>Ірпені</span></h1>
+        <p class="hero-sub">Дорослі групи будь-якого рівня та діти <b>від 4 років</b>. Перше тренування — безкоштовно, кімоно не потрібне.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="https://t.me/username" rel="noopener">Записатись у Telegram</a>
+          <a class="btn" style="border:2px solid #3a3a3e;color:#fff" href="#schedule">Розклад ↓</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick">
+      <a href="#locations"><div class="q-item">
+        <div class="q-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+        <div><b>Київ · Ірпінь</b><span>вул. Малевича / Західна, 6</span></div>
+      </div></a>
+      <a href="#schedule"><div class="q-item">
+        <div class="q-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6 4.2 2.5-.8 1.3L11 13V7h2v5.6z"/></svg></div>
+        <div><b>Пн – Сб</b><span>ранкові, денні та вечірні групи</span></div>
+      </div></a>
+      <a href="https://t.me/username" rel="noopener"><div class="q-item">
+        <div class="q-ico" style="background:var(--red)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8L18.2 6c.4-.3-.1-.5-.6-.2L7 12.4l-4.6-1.4c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.5.2 1.3 1.3z"/></svg></div>
+        <div><b>Запис і питання</b><span>Telegram — відповідаємо швидко</span></div>
+      </div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= РОЗКЛАД ================= -->
+<section class="sec" id="schedule">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Розклад тренувань</h2></div>
+
+    <div class="loc-tabs" role="tablist" aria-label="Вибір залу">
+      <button class="loc-tab" role="tab" aria-selected="true" aria-controls="sched-kyiv" onclick="showSched('kyiv',this)">Київ</button>
+      <button class="loc-tab" role="tab" aria-selected="false" aria-controls="sched-irpin" onclick="showSched('irpin',this)">Ірпінь</button>
+    </div>
+
+    <div class="sched active" id="sched-kyiv" role="tabpanel" aria-label="Розклад — Київ">
+      <table>
+        <thead><tr><th></th><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Ранок</td>
+            <td><span class="cl cl-base"><b>7:00 · Змішана група</b><i>Анастасія Светківська</i></span></td>
+            <td><span class="cl cl-pro"><b>10:00 · Adult PRO</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-base"><b>7:00 · Змішана група</b><i>Анастасія Светківська</i></span></td>
+            <td><span class="cl cl-pro"><b>10:00 · Adult PRO</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-base"><b>7:00 · Змішана група</b><i>Анастасія Светківська</i></span></td>
+            <td><span class="cl cl-pro"><b>10:00 · Adult PRO</b><i>Роман Непота</i></span></td>
+          </tr>
+          <tr>
+            <td>День</td>
+            <td><span class="cl cl-kid"><b>17:00 · Діти 4–7</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-kid"><b>17:00 · Діти 4–7</b><i>Дмитро Пищиков</i></span></td>
+            <td><span class="cl cl-kid"><b>17:00 · Діти 4–7</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-kid"><b>17:00 · Діти 4–7</b><i>Дмитро Пищиков</i></span></td>
+            <td><span class="cl cl-kid"><b>17:00 · Діти 4–7</b><i>Роман Непота</i></span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Вечір</td>
+            <td><span class="cl cl-kid"><b>18:00 · Діти PRO</b><i>Роман Непота</i></span><span class="cl cl-pro"><b>19:20 · Adult PRO</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-base"><b>19:00 · Базова група</b><i>Іван Сухих</i></span></td>
+            <td><span class="cl cl-kid"><b>18:00 · Діти PRO</b><i>Роман Непота</i></span><span class="cl cl-pro"><b>19:20 · Adult PRO</b><i>Роман Непота</i></span></td>
+            <td><span class="cl cl-base"><b>19:00 · Базова група</b><i>Іван Сухих</i></span></td>
+            <td><span class="cl cl-kid"><b>18:00 · Діти PRO</b><i>Роман Непота</i></span><span class="cl cl-pro"><b>19:20 · Adult PRO</b><i>Роман Непота</i></span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sched" id="sched-irpin" role="tabpanel" aria-label="Розклад — Ірпінь">
+      <table style="min-width:520px">
+        <thead><tr><th></th><th>Вт</th><th>Чт</th><th>Сб</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Ранок</td>
+            <td></td>
+            <td></td>
+            <td><span class="cl cl-pro"><b>9:00 · Adult PRO</b><i>Анастасія Светківська</i></span><span class="cl cl-kid"><b>10:00 · Діти PRO</b><i>Анастасія Светківська</i></span></td>
+          </tr>
+          <tr>
+            <td>Вечір</td>
+            <td><span class="cl cl-kid"><b>17:30 · Діти PRO</b><i>Анастасія Светківська</i></span><span class="cl cl-pro"><b>19:00 · Adult PRO</b><i>Анастасія Светківська</i></span></td>
+            <td><span class="cl cl-kid"><b>17:30 · Діти PRO</b><i>Анастасія Светківська</i></span><span class="cl cl-pro"><b>19:00 · Adult PRO</b><i>Анастасія Светківська</i></span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="legend">
+      <span><i style="background:#E9F0FA"></i>Дитячі групи</span>
+      <span><i style="background:#FBEAEA"></i>PRO (досвідчені)</span>
+      <span><i style="background:#F0EFEA"></i>Базова / змішана</span>
+    </div>
+    <p class="sched-note">Перед першим візитом напишіть у <a href="https://t.me/username" rel="noopener">Telegram</a> — підтвердимо місце в групі.</p>
+  </div>
+</section>
+
+<!-- ================= ГРУПИ ================= -->
+<section class="sec" id="classes" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Групи та формати</h2></div>
+    <div class="class-grid">
+      <div class="class-card">
+        <h3>Базова група</h3>
+        <p>Старт з нуля: безпечні падіння, основні позиції, перші прийоми. Жодного досвіду не потрібно.</p>
+      </div>
+      <div class="class-card">
+        <h3>Змішана група</h3>
+        <p>Ранкові тренування для всіх рівнів — техніка та спаринги з адаптацією під кожного.</p>
+      </div>
+      <div class="class-card pro">
+        <h3>Adult PRO</h3>
+        <p>Група для досвідчених: складна техніка, інтенсивні спаринги, підготовка до змагань.</p>
+      </div>
+      <div class="class-card kid">
+        <h3>Діти 4–7 років</h3>
+        <p>Перші кроки в боротьбі через гру: координація, дисципліна, повага до партнера.</p>
+      </div>
+      <div class="class-card kid">
+        <h3>Діти PRO</h3>
+        <p>Для дітей з досвідом: повноцінна техніка BJJ, спаринги та змагальна підготовка.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ТРЕНЕРИ ================= -->
+<section class="sec" id="coaches" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Тренери</h2></div>
+    <div class="coach-grid">
+      <!-- ДОДАТИ: фото, пояс, лінедж (у кого отримав пояс), регалії -->
+      <article class="coach-card">
+        <div class="coach-photo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
+        <div class="coach-body">
+          <h3>Роман Непота</h3>
+          <div class="role">Головний тренер · Київ</div>
+          <p>Adult PRO та дитячі групи. Пояс і досягнення буде додано.</p>
+        </div>
+      </article>
+      <article class="coach-card">
+        <div class="coach-photo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
+        <div class="coach-body">
+          <h3>Анастасія Светківська</h3>
+          <div class="role">Тренерка · Київ / Ірпінь</div>
+          <p>Змішані групи в Києві та всі групи в Ірпені. Пояс і досягнення буде додано.</p>
+        </div>
+      </article>
+      <article class="coach-card">
+        <div class="coach-photo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
+        <div class="coach-body">
+          <h3>Дмитро Пищиков</h3>
+          <div class="role">Тренер дитячих груп</div>
+          <p>Діти 4–7 років у Києві. Пояс і досягнення буде додано.</p>
+        </div>
+      </article>
+      <article class="coach-card">
+        <div class="coach-photo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
+        <div class="coach-body">
+          <h3>Іван Сухих</h3>
+          <div class="role">Тренер базової групи</div>
+          <p>Базова група для початківців у Києві. Пояс і досягнення буде додано.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЦІНИ ================= -->
+<section class="sec" id="prices" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Абонементи</h2></div>
+    <!-- ЦІНИ-ЗАГЛУШКИ: замінити на реальні -->
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Разове тренування</h3>
+        <div class="pc-sum">300 <small>грн</small></div>
+        <p>Будь-яке заняття. Перше — безкоштовно.</p>
+      </div>
+      <div class="price-card">
+        <h3>8 тренувань / міс</h3>
+        <div class="pc-sum">1 600 <small>грн</small></div>
+        <p>2 заняття на тиждень.</p>
+      </div>
+      <div class="price-card hot">
+        <span class="pc-badge">Популярний</span>
+        <h3>Безліміт / міс</h3>
+        <div class="pc-sum">2 200 <small>грн</small></div>
+        <p>Усі групи, обидва зали.</p>
+      </div>
+      <div class="price-card">
+        <h3>Дитячий / міс</h3>
+        <div class="pc-sum">1 400 <small>грн</small></div>
+        <p>Заняття в дитячій групі.</p>
+      </div>
+    </div>
+    <p class="price-note">Оплата готівкою в залі або переказом. Сімейні знижки — питайте в <a href="https://t.me/username" rel="noopener">Telegram</a>.</p>
+  </div>
+</section>
+
+<!-- ================= ЗАЛИ ================= -->
+<section class="sec" id="locations" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Зали</h2></div>
+    <div class="loc-grid">
+      <article class="loc-card">
+        <iframe
+          src="https://www.google.com/maps?q=%D0%91%D0%9E%D0%A0%D0%95%D0%A6%D0%AC+%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%96%D0%B9%D0%BD%D0%B0+%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0+%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0+%D0%B2%D1%83%D0%BB.+%D0%9A%D0%B0%D0%B7%D0%B8%D0%BC%D0%B8%D1%80%D0%B0+%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0+%D0%9A%D0%B8%D1%97%D0%B2&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Карта: зал у Києві, вул. Казимира Малевича"></iframe>
+        <div class="loc-body">
+          <h3>Київ</h3>
+          <p>вул. Казимира Малевича · спортшкола «Борець»</p>
+          <a class="route" href="https://www.google.com/maps/dir/?api=1&destination=%D0%91%D0%9E%D0%A0%D0%95%D0%A6%D0%AC+%D0%B2%D1%83%D0%BB.+%D0%9A%D0%B0%D0%B7%D0%B8%D0%BC%D0%B8%D1%80%D0%B0+%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0+%D0%9A%D0%B8%D1%97%D0%B2" rel="noopener">Побудувати маршрут →</a>
+        </div>
+      </article>
+      <article class="loc-card">
+        <iframe
+          src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%97%D0%B0%D1%85%D1%96%D0%B4%D0%BD%D0%B0+6+%D0%86%D1%80%D0%BF%D1%96%D0%BD%D1%8C&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Карта: зал в Ірпені, вул. Західна 6, ЖК Річ Таун"></iframe>
+        <div class="loc-body">
+          <h3>Ірпінь</h3>
+          <p>вул. Західна, 6 · ЖК Річ Таун</p>
+          <a class="route" href="https://www.google.com/maps/dir/?api=1&destination=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%97%D0%B0%D1%85%D1%96%D0%B4%D0%BD%D0%B0+6+%D0%86%D1%80%D0%BF%D1%96%D0%BD%D1%8C" rel="noopener">Побудувати маршрут →</a>
+        </div>
+      </article>
+    </div>
+    <!-- ФОТО ЗАЛУ: замінити заглушки на реальні фото (4–8 шт.) -->
+    <div class="photo-grid">
+      <div class="photo-ph">фото залу скоро</div>
+      <div class="photo-ph">фото залу скоро</div>
+      <div class="photo-ph">фото залу скоро</div>
+      <div class="photo-ph">фото залу скоро</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРАВИЛА ================= -->
+<section class="sec" id="rules" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Правила залу</h2></div>
+    <div class="rules">
+      <div class="rule">На татамі — босоніж, поза татамі — у взутті.</div>
+      <div class="rule">Чисте гі або рашгард і шорти без металевих елементів.</div>
+      <div class="rule">Коротко підстрижені нігті, без прикрас і годинників.</div>
+      <div class="rule">На перше тренування достатньо футболки та шортів.</div>
+      <div class="rule">Спізнились — дочекайтесь дозволу тренера зайти на мат.</div>
+      <div class="rule">Поважайте партнера: постукування — негайно відпускаємо.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТИ ================= -->
+<section class="sec" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <h2>Записатися на пробне</h2>
+        <p>Напишіть у Telegram — підкажемо групу під ваш рівень і вік дитини. Перше тренування безкоштовне.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-red" href="https://t.me/username" rel="noopener">Telegram</a>
+        <a class="btn" style="border:2px solid #3a3a3e;color:#fff" href="https://instagram.com/username" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 SUBHUNTER Jiu-Jitsu Academy · Київ · Ірпінь</span>
+    <span><a href="https://t.me/username" rel="noopener">Telegram</a> · <a href="https://instagram.com/username" rel="noopener">Instagram</a></span>
+  </div>
+</footer>
+
+<script>
+function showSched(id, btn){
+  document.querySelectorAll('.sched').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sched-'+id).classList.add('active');
+  document.querySelectorAll('.loc-tab').forEach(t=>t.setAttribute('aria-selected','false'));
+  btn.setAttribute('aria-selected','true');
+}
+function toggleMenu(btn){
+  const nav=document.getElementById('navLinks');
+  btn.setAttribute('aria-expanded', nav.classList.toggle('open'));
+}
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('open');
+}));
+</script>
+</body>
+</html>
