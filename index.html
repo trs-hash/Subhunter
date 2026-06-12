@@ -196,6 +196,53 @@ td:first-child{font-family:var(--font-d);font-weight:600;font-size:14px;letter-s
 .price-card p{font-size:13px;color:var(--grey);margin-top:4px}
 .price-note{margin-top:14px;color:var(--grey);font-size:13px}
 
+/* ============ Змагання ============ */
+.comp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.comp-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.comp-top{background:var(--ink);color:#fff;padding:18px 20px;position:relative}
+.comp-top::after{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
+.comp-status{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:10px}
+.comp-status.open{background:var(--red);color:#fff}
+.comp-status.soon{background:#3a3a3e;color:#cfcfd4}
+.comp-status.past{background:#2a2a2e;color:#9a9aa0}
+.comp-top h3{font-family:var(--font-d);font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:.02em;line-height:1.15}
+.comp-body{padding:18px 20px;display:flex;flex-direction:column;gap:11px;flex:1}
+.comp-meta{display:flex;flex-direction:column;gap:8px}
+.comp-row{display:flex;gap:10px;align-items:baseline;font-size:14px}
+.comp-row svg{width:15px;height:15px;flex:none;color:var(--red);transform:translateY(2px)}
+.comp-row b{font-weight:700}
+.comp-row span{color:var(--grey)}
+.comp-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.comp-tag{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:4px;background:#F0EFEA;color:#3A3A3E}
+.comp-tag.gi{background:#FBEAEA;color:#7E1418}
+.comp-tag.nogi{background:#E9F0FA;color:#1D4378}
+.comp-actions{display:flex;gap:9px;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+.comp-actions .btn{padding:11px 18px;font-size:14px;flex:1;min-width:130px}
+.comp-note{margin-top:16px;color:var(--grey);font-size:13px;background:#F0EFEA;border-radius:8px;padding:13px 16px}
+.comp-note b{color:var(--ink)}
+
+/* ============ Табори ============ */
+.camp-tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.camp-tab{background:var(--card);border:1px solid var(--line);color:var(--grey);font-family:var(--font-b);font-weight:800;font-size:14px;padding:10px 20px;border-radius:6px;cursor:pointer;transition:.15s}
+.camp-tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.camp-list{display:none;flex-direction:column;gap:14px}
+.camp-list.active{display:flex}
+.camp-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:120px 1fr;align-items:stretch}
+.camp-date{background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 10px;text-align:center;position:relative}
+.camp-date::after{content:'';position:absolute;right:0;top:0;bottom:0;width:4px;background:var(--red)}
+.camp-date .d-day{font-family:var(--font-d);font-weight:700;font-size:28px;line-height:1}
+.camp-date .d-mon{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#cfcfd4;margin-top:3px}
+.camp-date .d-year{font-size:11px;color:#9a9aa0;margin-top:2px}
+.camp-info{padding:18px 20px}
+.camp-info h3{font-family:var(--font-d);font-weight:600;font-size:17px;text-transform:uppercase;letter-spacing:.02em}
+.camp-info .camp-place{color:var(--red);font-size:13px;font-weight:800;margin-top:3px;display:flex;gap:6px;align-items:center}
+.camp-info .camp-place svg{width:13px;height:13px}
+.camp-info p{color:var(--grey);font-size:14px;margin-top:8px}
+.camp-badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.camp-badge{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:4px;background:#F0EFEA;color:#3A3A3E}
+.camp-card.is-past{opacity:.82}
+.camp-card.is-past .camp-date{background:#3a3a3e}
+
 /* ============ Зали ============ */
 .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .loc-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -233,6 +280,7 @@ footer a{color:var(--grey)}
   .loc-grid{grid-template-columns:1fr}
   .photo-grid{grid-template-columns:repeat(2,1fr)}
   .rules{grid-template-columns:1fr}
+  .comp-grid{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .nav-links{display:none;position:absolute;top:62px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:6px 18px 14px}
@@ -242,6 +290,11 @@ footer a{color:var(--grey)}
   .class-grid,.coach-grid,.price-grid{grid-template-columns:1fr}
   .hero-logo{width:170px;height:170px}
   .sec{padding:42px 0}
+  .camp-card{grid-template-columns:1fr}
+  .camp-date{flex-direction:row;gap:8px;padding:11px 16px;justify-content:flex-start}
+  .camp-date::after{top:auto;bottom:0;left:0;right:0;width:auto;height:4px}
+  .camp-date .d-mon,.camp-date .d-year{margin-top:0}
+  .comp-actions .btn{min-width:0}
 }
 </style>
 </head>
@@ -255,6 +308,8 @@ footer a{color:var(--grey)}
         <li><a href="#schedule">Розклад</a></li>
         <li><a href="#classes">Групи</a></li>
         <li><a href="#coaches">Тренери</a></li>
+        <li><a href="#competitions">Змагання</a></li>
+        <li><a href="#camps">Табори</a></li>
         <li><a href="#prices">Ціни</a></li>
         <li><a href="#locations">Зали</a></li>
       </ul>
@@ -478,6 +533,189 @@ footer a{color:var(--grey)}
   </div>
 </section>
 
+<!-- ================= ЗМАГАННЯ ================= -->
+<section class="sec" id="competitions" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Змагання · SUB ONLY</h2>
+      <p>Турніри у форматі submission only — перемога лише чистим прийомом, без суддівських балів. Реєстрація та сітки — у Smoothcomp.</p>
+    </div>
+
+    <!-- КАРТКИ-ЗАГЛУШКИ: дані з відкритих джерел, відредагувати під ваші події.
+         Кнопку "Реєстрація" вести на сторінку конкретної події в Smoothcomp:
+         формат https://smoothcomp.com/en/event/НОМЕР -->
+    <div class="comp-grid">
+
+      <!-- Майбутній турнір -->
+      <article class="comp-card">
+        <div class="comp-top">
+          <span class="comp-status open">Реєстрація відкрита</span>
+          <h3>SUB ONLY Championship<br>Summer Cup Kyiv</h3>
+        </div>
+        <div class="comp-body">
+          <div class="comp-meta">
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm0 6h10v2H7V8z"/></svg><b>Дата уточнюється</b></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Київ · SC «Борець»</span></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg><span>Діти, юнаки та дорослі</span></div>
+          </div>
+          <div class="comp-tags">
+            <span class="comp-tag nogi">No-Gi</span>
+            <span class="comp-tag">Submission only</span>
+            <span class="comp-tag">Абсолютка</span>
+          </div>
+          <div class="comp-actions">
+            <a class="btn btn-red" href="https://smoothcomp.com/" rel="noopener" target="_blank">Реєстрація</a>
+            <a class="btn btn-line" href="https://t.me/username" rel="noopener">Запитати</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Анонс -->
+      <article class="comp-card">
+        <div class="comp-top">
+          <span class="comp-status soon">Скоро анонс</span>
+          <h3>SUB ONLY Ukrainian<br>Championship</h3>
+        </div>
+        <div class="comp-body">
+          <div class="comp-meta">
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm0 6h10v2H7V8z"/></svg><b>Дата уточнюється</b></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Київ</span></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg><span>Усі вікові категорії</span></div>
+          </div>
+          <div class="comp-tags">
+            <span class="comp-tag gi">Gi</span>
+            <span class="comp-tag nogi">No-Gi</span>
+            <span class="comp-tag">Submission only</span>
+          </div>
+          <div class="comp-actions">
+            <a class="btn btn-dark" href="https://t.me/username" rel="noopener">Дізнатись про дату</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Минулий турнір -->
+      <article class="comp-card">
+        <div class="comp-top">
+          <span class="comp-status past">Завершено</span>
+          <h3>SUB ONLY Ukrainian<br>Championship 2024</h3>
+        </div>
+        <div class="comp-body">
+          <div class="comp-meta">
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm0 6h10v2H7V8z"/></svg><b>Грудень 2024</b></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Київ</span></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg><span>2 дні · 200+ учасників</span></div>
+          </div>
+          <div class="comp-tags">
+            <span class="comp-tag nogi">No-Gi</span>
+            <span class="comp-tag">Submission only</span>
+          </div>
+          <div class="comp-actions">
+            <a class="btn btn-line" href="https://smoothcomp.com/en/event/20607/schedule/matchlist" rel="noopener" target="_blank">Сітки та результати</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Минулий турнір -->
+      <article class="comp-card">
+        <div class="comp-top">
+          <span class="comp-status past">Завершено</span>
+          <h3>SUB ONLY Championship<br>Summer Cup 2025</h3>
+        </div>
+        <div class="comp-body">
+          <div class="comp-meta">
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm0 6h10v2H7V8z"/></svg><b>Червень 2025</b></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Київ · SC «Борець»</span></div>
+            <div class="comp-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg><span>Діти, юнаки, дорослі</span></div>
+          </div>
+          <div class="comp-tags">
+            <span class="comp-tag nogi">No-Gi</span>
+            <span class="comp-tag">Submission only</span>
+          </div>
+          <div class="comp-actions">
+            <a class="btn btn-line" href="https://smoothcomp.com/en/event/17333/schedule/matchlist" rel="noopener" target="_blank">Сітки та результати</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="comp-note"><b>Як зареєструватися:</b> натисніть «Реєстрація» — відкриється сторінка турніру в Smoothcomp, де потрібен безкоштовний акаунт. Там же зважування, розклад поєдинків і сітки в день змагань. Якщо реєструєтесь уперше — підкажемо, напишіть у <a href="https://t.me/username" rel="noopener">Telegram</a>.</p>
+  </div>
+</section>
+
+<!-- ================= СПОРТИВНІ ТАБОРИ ================= -->
+<section class="sec" id="camps" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="dash"></span><h2>Спортивні табори</h2>
+      <p>Виїзні збори з інтенсивними тренуваннями, відпочинком і командною атмосферою — для дорослих і дітей.</p>
+    </div>
+
+    <div class="camp-tabs" role="tablist" aria-label="Тип таборів">
+      <button class="camp-tab" role="tab" aria-selected="true" aria-controls="camp-up" onclick="showCamp('up',this)">Майбутні</button>
+      <button class="camp-tab" role="tab" aria-selected="false" aria-controls="camp-past" onclick="showCamp('past',this)">Минулі</button>
+    </div>
+
+    <!-- ТАБОРИ-ЗАГЛУШКИ: загальні дані для наглядності, відредагувати під реальні збори -->
+    <div class="camp-list active" id="camp-up" role="tabpanel" aria-label="Майбутні табори">
+      <article class="camp-card">
+        <div class="camp-date"><span class="d-day">—</span><span class="d-mon">Літо</span><span class="d-year">2026</span></div>
+        <div class="camp-info">
+          <h3>Літній кемп — Карпати</h3>
+          <div class="camp-place"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>Місце уточнюється</div>
+          <p>Тиждень зборів: два тренування на день, грепплінг-спаринги, відновлення, походи й активний відпочинок на природі. Для дорослих і підлітків.</p>
+          <div class="camp-badges">
+            <span class="camp-badge">7 днів</span>
+            <span class="camp-badge">Дорослі + підлітки</span>
+            <span class="camp-badge">Проживання + харчування</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="camp-card">
+        <div class="camp-date"><span class="d-day">—</span><span class="d-mon">Осінь</span><span class="d-year">2026</span></div>
+        <div class="camp-info">
+          <h3>Дитячий табір вихідного дня</h3>
+          <div class="camp-place"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>Київська область</div>
+          <p>Збори вихідного дня для дітей: тренування, ігри, командні активності та основи дисципліни в комфортному форматі під наглядом тренерів.</p>
+          <div class="camp-badges">
+            <span class="camp-badge">2 дні</span>
+            <span class="camp-badge">Діти 6–13</span>
+            <span class="camp-badge">З тренерами школи</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="camp-list" id="camp-past" role="tabpanel" aria-label="Минулі табори">
+      <article class="camp-card is-past">
+        <div class="camp-date"><span class="d-day">—</span><span class="d-mon">Літо</span><span class="d-year">2025</span></div>
+        <div class="camp-info">
+          <h3>Літній тренувальний кемп</h3>
+          <div class="camp-place"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>Україна</div>
+          <p>Тиждень інтенсивних тренувань no-gi та gi, спаринги, теорія та командний відпочинок. Учасники — дорослі та підлітки школи.</p>
+          <div class="camp-badges">
+            <span class="camp-badge">7 днів</span>
+            <span class="camp-badge">Завершено</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="camp-card is-past">
+        <div class="camp-date"><span class="d-day">—</span><span class="d-mon">Зима</span><span class="d-year">2024</span></div>
+        <div class="camp-info">
+          <h3>Зимові збори</h3>
+          <div class="camp-place"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>Україна</div>
+          <p>Інтенсив у міжсезоння: підготовка до весняних турнірів, відпрацювання техніки та змагальні спаринги.</p>
+          <div class="camp-badges">
+            <span class="camp-badge">Завершено</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="comp-note"><b>Хочете на збори?</b> Дати й деталі найближчого табору — у <a href="https://t.me/username" rel="noopener">Telegram</a>. Кількість місць обмежена.</p>
+  </div>
+</section>
+
 <!-- ================= ЗАЛИ ================= -->
 <section class="sec" id="locations" style="padding-top:0">
   <div class="wrap">
@@ -561,6 +799,12 @@ function showSched(id, btn){
   document.querySelectorAll('.sched').forEach(s=>s.classList.remove('active'));
   document.getElementById('sched-'+id).classList.add('active');
   document.querySelectorAll('.loc-tab').forEach(t=>t.setAttribute('aria-selected','false'));
+  btn.setAttribute('aria-selected','true');
+}
+function showCamp(id, btn){
+  document.querySelectorAll('.camp-list').forEach(s=>s.classList.remove('active'));
+  document.getElementById('camp-'+id).classList.add('active');
+  document.querySelectorAll('.camp-tab').forEach(t=>t.setAttribute('aria-selected','false'));
   btn.setAttribute('aria-selected','true');
 }
 function toggleMenu(btn){
