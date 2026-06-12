@@ -256,6 +256,20 @@ td:first-child{font-family:var(--font-d);font-weight:600;font-size:14px;letter-s
 .photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
 .photo-ph{aspect-ratio:4/3;border-radius:10px;background:repeating-linear-gradient(45deg,#ECEBE6,#ECEBE6 12px,#F2F1ED 12px,#F2F1ED 24px);display:flex;align-items:center;justify-content:center;color:#A7A6A0;font-size:12px;font-weight:700;border:1px solid var(--line)}
 
+/* ============ Анонс SUB ONLY (стрічка під шапкою) ============ */
+.promo{background:var(--ink);color:#fff;border-bottom:2px solid var(--red)}
+.promo-in{max-width:var(--w);margin:0 auto;padding:11px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.promo-left{display:flex;align-items:center;gap:14px;min-width:0}
+.promo-badge{background:var(--red);color:#fff;font-family:var(--font-d);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:5px;white-space:nowrap;flex:none}
+.promo-txt{font-size:14.5px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.promo-txt b{font-weight:800}
+.promo-txt .live{color:#ff8a85;font-weight:800}
+.promo-cta{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:13.5px;padding:9px 17px;border-radius:6px;white-space:nowrap;flex:none;transition:background .15s}
+.promo-cta:hover{background:var(--red-d)}
+.promo-pulse{width:8px;height:8px;border-radius:50%;background:#ff8a85;flex:none;animation:pp 1.6s ease-in-out infinite}
+@keyframes pp{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion: reduce){.promo-pulse{animation:none}}
+
 /* ============ Правила ============ */
 .rules{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:860px}
 .rule{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:baseline;font-size:14.5px}
@@ -295,6 +309,10 @@ footer a{color:var(--grey)}
   .camp-date::after{top:auto;bottom:0;left:0;right:0;width:auto;height:4px}
   .camp-date .d-mon,.camp-date .d-year{margin-top:0}
   .comp-actions .btn{min-width:0}
+  .promo-in{flex-wrap:wrap;gap:10px;padding:10px 16px}
+  .promo-left{gap:10px;flex:1 1 100%}
+  .promo-txt{white-space:normal}
+  .promo-cta{flex:1 1 100%;justify-content:center;padding:11px 17px}
 }
 </style>
 </head>
@@ -322,6 +340,17 @@ footer a{color:var(--grey)}
   </div>
 </header>
 
+<!-- ===== АНОНС SUB ONLY (видно одразу) — оновлювати під актуальну подію ===== -->
+<div class="promo">
+  <div class="promo-in">
+    <div class="promo-left">
+      <span class="promo-badge">SUB ONLY</span>
+      <span class="promo-txt"><span class="promo-pulse"></span> <b>Summer Cup Kyiv</b> — <span class="live">реєстрація відкрита</span></span>
+    </div>
+    <a class="promo-cta" href="#competitions">Деталі та реєстрація →</a>
+  </div>
+</div>
+
 <main>
 
 <!-- ================= ВІЗИТКА ================= -->
@@ -334,6 +363,7 @@ footer a{color:var(--grey)}
         <p class="hero-sub">Дорослі групи будь-якого рівня та діти <b>від 4 років</b>. Перше тренування — безкоштовно, кімоно не потрібне.</p>
         <div class="hero-actions">
           <a class="btn btn-red" href="https://t.me/username" rel="noopener">Записатись у Telegram</a>
+          <a class="btn" style="border:2px solid #3a3a3e;color:#fff" href="#competitions">🥋 SUB ONLY</a>
           <a class="btn" style="border:2px solid #3a3a3e;color:#fff" href="#schedule">Розклад ↓</a>
         </div>
       </div>
